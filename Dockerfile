@@ -82,7 +82,7 @@ RUN apt-get update && apt-get install -y wget
 
 RUN wget --progress=bar:force:noscroll https://huggingface.co/decapoda-research/llama-7b-hf-int4/resolve/main/llama-7b-4bit.pt
 
-
+RUN mkdir -p /var/cache/apt/archives/partial && apt-get autoclean
 
 # -------------------------------
 
